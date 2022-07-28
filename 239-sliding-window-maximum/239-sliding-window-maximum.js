@@ -3,6 +3,8 @@
  * @param {number} k
  * @return {number[]}
  */
+
+// Before we push an element into the deque, we first pop everything smaller than it out of the deque.
 var maxSlidingWindow = function(nums, k) {
   let res = [];
   let q = [];
